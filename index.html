@@ -1,219 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="shortcut icon" type="image/png" href="varun985.github.io\briefcase.png">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<header class="header">
-    <a href="#" class="logo">Portfolio</a>
-    <nav class="navbar" id="myLinks">
-        <a href="#Home" style="--i:1" class="active">Home</a>
-        <a href="#About" style="--i:2">About</a>
-        <a href="#Skills" style="--i:3">Skills</a>
-        <a href="#Projects" style="--i:4">Projects</a>
-        <a href="#Contact" style="--i:5">Contact</a>
-    </nav>
-</header>
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-<section class="home" id="Home">
-    <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>KONKIMALLA VENKATA SAI VARUN</h1>
-        <h4 style="--i:6">I'm a Engineering student who is<br>passionate in <span class="typing"></span></h4>
+
+        <title>Portfolio - Hrishikesh </title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">My Portfolio</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color"> Hrishikesh </span><br> Web Developer</h1>
+
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/hrishikesh-samala-16b415203/" class="home__social-icon" target="_blank" rel="noopener noreferrer"><i id = 'icons' class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/Hrishi2705" class="home__social-icon" target="_blank" rel="noopener noreferrer"><i id = 'icons' class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <div class="blob">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="./assets/images/hrishi_img.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Hrishikesh</h2>
+                        <p class="about__text" align="justify">I hold a B.E. (Hons.) degree in Electronics and Communications Engineering from BITS Pilani Hyderabad Campus, with a CGPA of 7.23/10. Alongside, I pursued a minor in Computing and Intelligence, specializing in web development through coursework and projects. While my focus has been on web development, I'm enthusiastic about utilizing my technical skills and problem-solving abilities to tackle diverse challenges and innovate across different domains.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== EDUCATION =====-->
+            <section class="education section" id="education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="education_container bd-grid">
+                    <div class="grid-container-edu">
+
+                        <div class="grid-child-work">
+                            <div class="edu__box">
+                                <div class="edu__img">
+                                        <img src="./assets/images/bits-img.png" class="bits_img">
+                                </div>
+                                <div class="edu_title">
+                                    
+                                    <div class="edu_name">
+                                        <h2>BITS Pilani Hyderabad Campus</h2>
+                                        <p><b>B.E (Hons) in Electronics and Communication Engineering</b></p><br>
+                                        <p>
+                                            <b>Minor Degree :</b> Computing and Intelligence<br>
+                                            <b>CGPA :</b> 7.23 <br>
+                                            <b>Coursework :</b> DSA, OS, AI, Software Engineering, OOPS, Cryptography
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a> -->
+                </div>
+            </section>
+
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="grid-container">
+
+                    <div class="grid-child">
+                        <div class="skills__container bd-grid">          
+                            <div>
+                                <h2 class="skills__subtitle">Technology Stacks</h2>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-mongodb skills__icon'></i>
+                                        <span class="skills__name">MONGO DB</span>
+                                    </div>
+                                    <div class="skills__bar skills__mongo">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">95%</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-nodejs skills__icon'></i>
+                                        <span class="skills__name">Express.js</span>
+                                    </div>
+                                    <div class="skills__bar skills__express">
         
-        <div class="img">
-            <img src="varun985.github.io\final linked pic.jpg" class="responsive" alt="Your Image">
-        </div>
-
-        <div class="home-sci">
-            <a href="https://www.linkedin.com/in/varun-konkimalla-02a093160/" style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/varun985" style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
-        </div>
-        <a href="https://drive.google.com/file/d/12D2fzsSERsRTUe5upm195lpvt23tbvRr/view?usp=sharing" style="--i:11" class="btn-box" target="_blank">Download Resume</a>
-    </div>
-</section>
-
-<section>
-    <div class="about" id="About">
-        <div class="about-img">
-            <img src="varun985.github.io\final linked pic.jpg" class="abt-res" alt="About Image">
-        </div>
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <p>
-                Dedicated and Motivated student, currently pursuing a Bachelor of Engineering degree in Mechanical Engineering
-                and a Master of Science degree in Chemistry from BITS Pilani, Hyderabad Campus. Along with my degree, I have completed
-                courses in Python, SQL, Google Cloud, AWS, and Postman API. Curious to apply theory-based knowledge to projects to meet
-                industrial requirements. Known for accomplishing objectives, excelling in time management, and being a team player.
-                I am currently seeking roles where I can utilize my experience and skills.<br><br>
-                <a href="https://drive.google.com/file/d/18UQSFzY9kdABAWTxDMgy_uBmery6-2q_/view?usp=sharing" style="--i:11" class="abtbtn-box" target="_blank">Download Resume</a>
-            </p>
-        </div>
-    </div>
-</section>
-
-<section id="Skills">
-    <h1 class="subtitle">My <span>Skills</span></h1>
-    <div class="sec">
-        <div class="container1">
-            <h1 class="heading1">Technical Skills</h1>
-            <div class="Technical-bars">
-
-                <div class="bar"><i class='bx bxl-html5' style="color: #c9332e;"></i>
-                    <div class="info">
-                        <span>HTML <span class="addhtml"></span></span>
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">85%</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-react skills__icon'></i>
+                                        <span class="skills__name">React</span>
+                                    </div>
+                                    <div class="skills__bar skills__react">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">85%</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-nodejs skills__icon'></i>
+                                        <span class="skills__name">Node.js</span>
+                                    </div>
+                                    <div class="skills__bar skills__node">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">95%</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-django skills__icon'></i>
+                                        <span class="skills__name">Django</span>
+                                    </div>
+                                    <div class="skills__bar skills__django">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="progress-line html">
-                        <span></span>
+                
+                    <div class="grid-child">
+                        <div class="skills__container bd-grid">          
+                            <div>
+                                <h2 class="skills__subtitle">Languages</h2>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-javascript skills__icon' ></i>
+                                        <span class="skills__name">JAVASCRIPT</span>
+                                    </div>
+                                    <div class="skills__bar skills__js">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">85%</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-python skills__icon'></i>
+                                        <span class="skills__name">Python</span>
+                                    </div>
+                                    <div class="skills__bar skills__python">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">75%</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-html5 skills__icon'></i>
+                                        <span class="skills__name">HTML5</span>
+                                    </div>
+                                    <div class="skills__bar skills__html">
+        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">95%</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-css3 skills__icon'></i>
+                                        <span class="skills__name">CSS3</span>
+                                    </div>
+                                    <div class="skills__bar skills__css">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">95%</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-postgresql skills__icon'></i>
+                                        <span class="skills__name">SQL</span>
+                                    </div>
+                                    <div class="skills__bar skills__sql">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                  
                 </div>
 
-                <div class="bar"><i class='bx bxl-css3' style="color: #147bbc;"></i>
-                    <div class="info">
-                        <span>CSS <span class="addcss"></span></span>
-                    </div>
-                    <div class="progress-line css">
-                        <span></span>
-                    </div>
-                </div>
+            </section>
 
-                <div class="bar"><i class='bx bxl-python' style="color: #b0bc1e;"></i>
-                    <div class="info">
-                        <span>Python <span class="addpy"></span></span>
-                    </div>
-                    <div class="progress-line python">
-                        <span></span>
-                    </div>
-                </div>
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
 
-                <div class="bar"><i class='bx bxl-java' style="color: #c95d2e;"></i>
-                    <div class="info">
-                        <span>Java <span class="addjava"></span></span>
-                    </div>
-                    <div class="progress-line java">
-                        <span></span>
-                    </div>
-                </div>
+                <div class="work__container bd-grid">
+                    <div class="grid-container">
 
-                <div class="bar"><i class='bx bxl-c-plus-plus' style="color: #3db2fc;"></i>
-                    <div class="info">
-                        <span>C/C++ <span class="addc"></span></span>
-                    </div>
-                    <div class="progress-line cpls">
-                        <span></span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container2">
-            <h1 class="heading1">Professional Skills</h1>
-            <div class="radial-bars">
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="80" r="80"></circle>
-                    </svg>
-                    <div class="percentage">60%</div>
-                    <div class="text">Problem Solving</div>
-                </div>
-
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
-                        <circle class="path path-2" cx="100" cy="80" r="80"></circle>
-                    </svg>
-                    <div class="percentage">70%</div>
-                    <div class="text">Creativity</div>
-                </div>
-
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
-                        <circle class="path path-3" cx="100" cy="80" r="80"></circle>
-                    </svg>
-                    <div class="percentage">80%</div>
-                    <div class="text">Communication</div>
-                </div>
-
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
-                        <circle class="path path-4" cx="100" cy="80" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Teamwork</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="Projects">
-    <div id="portfolio" class="services">
-        <div class="main-text" id="serv">
-            <h2>My <span>Projects</span></h2>
-            <div class="serv-container">
-                <div class="row">
-                    <img src="varun985.github.io\images.jpeg" alt="RUL of PCBs">
-                    <div class="layer">
-                        <h5>RUL of PCBs</h5>
-                        <p>AI and ML techniques for remaining useful life estimation of systems such as PCBs used in Missile systems. Part of DRDO ARMREB project. Awaiting publication soon.</p>
-                        <a href="#"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
+                        <div class="grid-child-work">
+                            <div class="work__box">
+                                <div class="work__img">
+                                    <img src="./assets/images/dailybee_img.png">
+                                </div>
+                                <div class="edu_title">
+                                    
+                                    <div class="edu_name">
+                                        <h2>DailyBee</h2>
+                                        <p style="font-size: large;"><b>SDE Intern</b></p>
+                                        <p><b>July 2023 - Dec 2023</b></p><br>
+                                           
+                                        <p align = "justify">
+                                            Developed web applications for data management and sales analysis during the 6-month internship.
+                                            <span class="mybox1" id="mybox1id">
+                                                <br>
+                                                <br>
+                                                <b>Project 1:</b> Built a Digitization Engine using a 6-stage scraping cycle to extract, process and consolidate data from diverse sources. Designed a Node.js interface to facilitate user interaction and efficient data storage.
+                                                <br><br>
+                                                <b>Project 2:</b> Created an Admin Dashboard for monitoring sales personnel and store performance. Leveraged Express and MongoDB to build a dynamic admin interface for centralized sales tracking and analysis.
+                                            </span>
+                                        </p>
+                                        
+                                        
+                                        <button id="mybuttonid" class="readmore_btn_1" onclick="changeReadMore1()">Read More</button> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-child-work">
+                            <div class="work__box">
+                                <div class="work__img">
+                                    <img src="./assets/images/shalaka_img.png">
+                                </div>
+                                <div class="edu_title">
+                                    
+                                    <div class="edu_name">
+                                        <h2>Shalaka Connected Devices</h2>
+                                        <p style="font-size: large;"><b>Summer Intern</b></p>
+                                        <p><b>May 2022 - July 2022</b></p><br>
+                                           
+                                        <p align = "justify">
+                                            Worked on the ins and outs of industrial IoT covering all the aspects of putting a product out with real life applications.
+                                            <span class="mybox2" id="mybox2id">
+                                                <br>
+                                                <br>
+                                                The final product takes in raw, analog inputs from sensors to control relays while also broadcasting the readings to another device using the Bluetooth Protocol.
+                                            </span>
+                                        </p>
+                                        
+                                        
+                                        <button id="mybuttonid" class="readmore_btn_2" onclick="changeReadMore2()">Read More</button> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="row">
-                    <img src="varun985.github.io\download.jpeg" alt="Regresiion Algorithms">
-                    <div class="layer">
-                        <h5>Regression Algorithms</h5>
-                        <p>Applied Decision Tree, Neural Networks, Naive Bayes, KNN algorithms and worked out optimal parameters and accuracies.</p>
-                        <a href="#"><i class='bx bxs-low-vision' style="color: aliceblue;"></i></a>
+            <section class="projects section" id="projects">
+                <h2 class="section-title"> Projects </h2>
+
+                <div class="work__container bd-grid">
+                    <div class="grid-container">
+
+                        <div class="grid-child-work">
+                            <div class="project__box">
+                                <h2>Admin Dashboard</h2>
+                                <p align = "justify">The Admin Dashboard is a full stack web application developed to provide centralized monitoring of personnel performance and work oversight through a user friendly interface for tracking key data.</p>
+                                <div id="links">
+                                    <a href="https://github.com/Hrishi2705/Admin-Dashboard" class="link_button" target="_blank">Github Repo</a>
+                                    <a href="https://sales-admin-dashboard-t511.onrender.com/" class="link_button" target="_blank">Live Link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-child-work">
+                            <div class="project__box">
+                                <h2>Pipeline Interface</h2>
+                                <p align = "justify">The Pipeline Interface is a versatile web application that automates and streamlines the execution of scripts through an easy to use interface, leveraging MongoDB as the database to manage scripts outputs.</p>
+                                <div id="links">
+                                    <a href="https://github.com/Hrishi2705/Pipeline-Interface" class="link_button" target="_blank">Github Repo</a>
+                                    <a href="https://pipeline-interface.onrender.com/" class="link_button" target="_blank">Live Link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-child-work">
+                            <div class="project__box">
+                                <h2>Timing Consensus Scheduler</h2>
+                                <p align = "justify">Timing Consensus Scheduler is a web application built using the Django framework that allows users to manage their availability, book facilities, and check the availability of other users. </p>
+                                <div id="links">
+                                    <a href="https://github.com/Hrishi2705/Timing-Consensus-Scheduler" class="link_button" target="_blank">Github Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-child-work">
+                            <div class="project__box">
+                                <h2>Project Bridge (Ongoing)</h2>
+                                <p align = "justify"> Project Bridge is a comprehensive platform facilitating streamlined project request management, efficient communication between teachers and students, and smart filtering for project allocation</p>
+                                <div id="links">
+                                    <a href="https://github.com/Hrishi2705/Project-Bridge" class="link_button" target="_blank">Github Repo</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="row">
-                    <img src="varun985.github.io\cybernetics-4216899-960-720-1561626457.jpg" alt="Robotic Arm">
-                    <div class="layer">
-                        <h5>Robotic Arm</h5>
-                        <p>Built a robotic arm jointed with nylon wires of which movement of fingers can be controlled by hand gestures. Made using OpenCV tool and relevant libraries of Python and Arduino setup.</p>
-                        <a href="#"><i class='bx bx-desktop' style="color: aliceblue;"></i></a>
-                    </div>
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact__container bd-grid">
+                    <form action="https://formsubmit.co/058861659185154e0d6c1e2e1737f96f" method="POST"> 
+                    <input type="text" name="Name" placeholder="Full Name" class="contact__input" required>
+                    <input type="email" name="Email" placeholder="Email" class="contact__input" required>
+                    <textarea name="Message" placeholder="Message" class="contact__input" required></textarea>
+                    <button type="submit" class="contact__button button" >Send</button>
+                    </form>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </section>
+        </main>
 
-<section class="contacts" id="Contact">
-    <div class="contact-text">
-        <h2>Contact <span>Me</span></h2>
-        <h4>Let's Work Together</h4>
-        <div class="contact-list">
-            <li><i class='bx bxs-send'></i>f20202393@hyderabad.bits-pilani.ac.in</li>
-            <li><i class="bx bxs-phone-call"></i>8639518238</li>
-        </div>
-        <div class="contact-icons">
-            <a href="https://github.com/varun985" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/varun-konkimalla-02a093160/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-        </div>
-    </div>
-</section>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+        </footer>
 
-<div class="last-text">
-    <p>Developed by Varun <i class='bx bx-copyright' style="color: white;"></i> 2024</p>
-</div>
-<a href="#Home" class="top"><i class='bx bx-up-arrow-alt'></i></a>
 
-<script src="script.js"></script>
-</body>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="./assets/js/main.js"></script>
+    </body>
 </html>
