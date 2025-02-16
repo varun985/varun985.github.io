@@ -71,6 +71,19 @@ function changeReadMore2() {
     }
 }
 
+function changeReadMore3() {
+    const mycontent = document.getElementById('mybox3id');
+    const mybutton = document.querySelector('.readmore_btn_3');
+
+    if (!mycontent.classList.contains('active')) {
+        mycontent.classList.add('active');
+        mybutton.textContent = 'Read Less';
+    } else {
+        mycontent.classList.remove('active');
+        mybutton.textContent = 'Read More';
+    }
+}
+
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
@@ -78,4 +91,4 @@ sr.reveal('.home__social-icon',{ interval: 200});
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 sr.reveal('.edu__box',{ interval: 200});  
 sr.reveal('.work__box',{ interval: 200}); 
-sr.reveal('.project__box',{ interval: 200}); 
+sr.reveal('.project__box',{ interval: 200});
